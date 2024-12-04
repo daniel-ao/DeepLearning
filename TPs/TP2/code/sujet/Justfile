@@ -1,9 +1,0 @@
-download-data:
-  kaggle datasets download -d splcher/animefacedataset
-  unzip animefacedataset.zip
-  rm animefacedataset.zip
-
-compile-requirements:
-  uv pip freeze | uv pip compile - -o requirements.txt
-pip-requirements:
-  uv pip install -r requirements.txt

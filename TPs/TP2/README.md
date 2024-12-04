@@ -1,4 +1,4 @@
-├── code
+```├── code
 │   └── sujet
 │       ├── Justfile
 │       ├── main.py
@@ -20,4 +20,4 @@
 │       └── trainer.py
 ├── dataset.md
 └── subject.pdf
-
+```

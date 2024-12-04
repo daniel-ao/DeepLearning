@@ -1,0 +1,32 @@
+---
+dataset:
+  data_dir: ./images
+  image_size: 96
+
+model:
+  layers:
+    - [32, 4]
+    - [64, 4]
+    - [64, 4]
+    - [128, 6]
+    - [256, 6]
+
+trainer:
+  batch_size: 32
+  device: auto
+  draw_freq: 5000
+  eval_freq: 1000
+  eval_iters: 20
+  kl_weight: 1e-2
+  learning_rate: 3e-4
+  total_iters: 100_000
+
+wandb:
+  entity: pierrotlc
+  mode: ${..mode}
+
+mode: offline
+
+hydra:
+  job:
+    chdir: true
